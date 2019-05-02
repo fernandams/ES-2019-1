@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :presentations
   resources :events
   resources :age_groups
   resources :categories
