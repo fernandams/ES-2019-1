@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  sec_code: 1
+  due_date: MyString
+  user: one
+
+two:
+  number: MyString
+  sec_code: 1
+  due_date: MyString
+  user: two
