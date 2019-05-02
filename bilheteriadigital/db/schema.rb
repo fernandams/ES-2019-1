@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_02_141419) do
+ActiveRecord::Schema.define(version: 2019_05_02_162514) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "age_groups", force: :cascade do |t|
+    t.string "about"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "typify"
+    t.string "about"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "credit_cards", force: :cascade do |t|
     t.string "number"
@@ -23,6 +36,29 @@ ActiveRecord::Schema.define(version: 2019_05_02_141419) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_credit_cards_on_user_id"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.string "address"
+    t.bigint "user_id"
+    t.bigint "age_group_id"
+    t.bigint "room_id"
+    t.bigint "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["age_group_id"], name: "index_events_on_age_group_id"
+    t.index ["category_id"], name: "index_events_on_category_id"
+    t.index ["room_id"], name: "index_events_on_room_id"
+    t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.integer "number"
+    t.string "about"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,4 +74,8 @@ ActiveRecord::Schema.define(version: 2019_05_02_141419) do
   end
 
   add_foreign_key "credit_cards", "users"
+  add_foreign_key "events", "age_groups"
+  add_foreign_key "events", "categories"
+  add_foreign_key "events", "rooms"
+  add_foreign_key "events", "users"
 end
