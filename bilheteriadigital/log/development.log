@@ -421,3 +421,425 @@ FOREIGN KEY ("category_id")
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-05-02 21:15:58 -0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 12018ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:16:18 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:16:21 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:16:59 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (328.2ms)
+Completed 500 Internal Server Error in 342ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x00007fa26c3dc9d8>:0x0000000004fa4548>
+Did you mean?  image_url):
+    165: 				
+    166: 				<!-- Slider Item -->
+    167: 				<div class="owl-item home_slider_item">
+    168: 					<div class="home_slider_background" style="background-image:url(<%= asset_path images/home_slider_1.jpg %>)"></div>
+    169: 					<div class="home_slider_content_container">
+    170: 						<div class="container">
+    171: 							<div class="row">
+  
+app/views/main/index.html.erb:168:in `_app_views_main_index_html_erb__1083744717209021546_70167788710800'
+Started GET "/" for ::1 at 2019-05-02 21:17:22 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (345.4ms)
+Completed 500 Internal Server Error in 360ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x00000000046a7eb8>:0x00007f14404f35e8>
+Did you mean?  image_url):
+    165: 				
+    166: 				<!-- Slider Item -->
+    167: 				<div class="owl-item home_slider_item">
+    168: 					<div class="home_slider_background" style="background-image:url(<%= asset_path images/home_slider_1.jpg %>)"></div>
+    169: 					<div class="home_slider_content_container">
+    170: 						<div class="container">
+    171: 							<div class="row">
+  
+app/views/main/index.html.erb:168:in `_app_views_main_index_html_erb___996254968011127909_69862477465120'
+Started GET "/" for ::1 at 2019-05-02 21:17:50 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (351.8ms)
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:18:01 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (158.7ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:18:02 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (97.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:18:30 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (290.2ms)
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( images/home_slider_1.jpg )` to `config/initializers/assets.rb` and restart your server):
+    165: 				
+    166: 				<!-- Slider Item -->
+    167: 				<div class="owl-item home_slider_item">
+    168: 					<div class="home_slider_background" style="background-image:url(<%= asset_path 'images/home_slider_1.jpg' %>)"></div>
+    169: 					<div class="home_slider_content_container">
+    170: 						<div class="container">
+    171: 							<div class="row">
+  
+app/views/main/index.html.erb:168:in `_app_views_main_index_html_erb___1716499987541649177_43048560'
+Started GET "/" for ::1 at 2019-05-02 21:18:49 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (35.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( images/home_slider_1.jpg )` to `config/initializers/assets.rb` and restart your server):
+    165: 				
+    166: 				<!-- Slider Item -->
+    167: 				<div class="owl-item home_slider_item">
+    168: 					<div class="home_slider_background" style="background-image:url(<%= asset_path "images/home_slider_1.jpg" %>)"></div>
+    169: 					<div class="home_slider_content_container">
+    170: 						<div class="container">
+    171: 							<div class="row">
+  
+app/views/main/index.html.erb:168:in `_app_views_main_index_html_erb___1716499987541649177_69876415232280'
+Started GET "/" for ::1 at 2019-05-02 21:20:05 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (693.5ms)
+Completed 500 Internal Server Error in 698ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x000000000521aca0>:0x00007f1abd308908>
+Did you mean?  image_url):
+    183: 
+    184: 				<!-- Slider Item -->
+    185: 				<div class="owl-item home_slider_item">
+    186: 					<div class="home_slider_background" style="background-image:url(<%= asset_path images/home_slider_1.jpg %>)"></div>
+    187: 					<div class="home_slider_content_container">
+    188: 						<div class="container">
+    189: 							<div class="row">
+  
+app/views/main/index.html.erb:186:in `_app_views_main_index_html_erb___1716499987541649177_69876409978760'
+Started GET "/" for ::1 at 2019-05-02 21:20:30 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (388.2ms)
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `images' for #<#<Class:0x000000000521aca0>:0x00007f1abd4a4f78>
+Did you mean?  image_url):
+    201: 
+    202: 				<!-- Slider Item -->
+    203: 				<div class="owl-item home_slider_item">
+    204: 					<div class="home_slider_background" style="background-image:url(<%= asset_path images/home_slider_1.jpg %>)"></div>
+    205: 					<div class="home_slider_content_container">
+    206: 						<div class="container">
+    207: 							<div class="row">
+  
+app/views/main/index.html.erb:204:in `_app_views_main_index_html_erb___1716499987541649177_69876410823240'
+Started GET "/" for ::1 at 2019-05-02 21:21:40 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (78.3ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( images/discount.png )` to `config/initializers/assets.rb` and restart your server):
+    248: 				<div class="avds_background" style="background-image:url(<%= asset_path 'avds_small.jpg' %>)"></div>
+    249: 				<div class="avds_small_inner">
+    250: 					<div class="avds_discount_container">
+    251: 						<%= image_tag "images/discount.png", class: "" %>
+    252: 						<div>
+    253: 							<div class="avds_discount">
+    254: 								<div>20<span>%</span>
+  
+app/views/main/index.html.erb:251:in `_app_views_main_index_html_erb___1716499987541649177_69876418121760'
+Started GET "/" for ::1 at 2019-05-02 21:22:39 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (25.8ms)
+Completed 500 Internal Server Error in 1853ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( styles/bootstrap4/bootstrap.min.css )` to `config/initializers/assets.rb` and restart your server):
+    13:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    14:   <meta name="description" content="Sublime project">
+    15:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    16:   <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    17:   <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    18:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    19:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3473616406629843397_69876416515120'
+Started GET "/" for ::1 at 2019-05-02 21:23:07 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (402.7ms)
+Completed 500 Internal Server Error in 418ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:23:31 -0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (405.2ms)
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:23:49 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (321.9ms)
+Completed 500 Internal Server Error in 573ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( styles/bootstrap4/bootstrap.min.css )` to `config/initializers/assets.rb` and restart your server):
+    13:   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    14:   <meta name="description" content="Sublime project">
+    15:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    16:   <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    17:   <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    18:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    19:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1055578919543647340_42659360'
+Started GET "/" for ::1 at 2019-05-02 21:24:12 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (294.3ms)
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( plugins/font-awesome-4.7.0/css/font-awesome.min.css )` to `config/initializers/assets.rb` and restart your server):
+    14:   <meta name="description" content="Sublime project">
+    15:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    16:   <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    17:   <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    18:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    19:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+    20:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/animate.css" %>
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3869996287700226029_35558140'
+Started GET "/" for ::1 at 2019-05-02 21:24:31 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (319.2ms)
+Completed 500 Internal Server Error in 591ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( plugins/OwlCarousel2-2.2.1/owl.carousel.css )` to `config/initializers/assets.rb` and restart your server):
+    15:   <meta name="viewport" content="width=device-width, initial-scale=1">
+    16:   <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    17:   <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    18:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    19:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+    20:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/animate.css" %>
+    21:   <%= stylesheet_link_tag "styles/main_styles.css" %>
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___3048433290190458649_70192015106420'
+Started GET "/" for ::1 at 2019-05-02 21:24:54 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (326.9ms)
+Completed 500 Internal Server Error in 629ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( plugins/OwlCarousel2-2.2.1/owl.theme.css )` to `config/initializers/assets.rb` and restart your server):
+    16:   <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    17:   <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    18:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    19:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+    20:   <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/animate.css" %>
+    21:   <%= stylesheet_link_tag "styles/main_styles.css" %>
+    22:   <%= stylesheet_link_tag "styles/responsive.css" %>
+  
+app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__1656802672150730398_69996594095340'
+Started GET "/" for ::1 at 2019-05-02 21:26:22 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (2151.5ms)
+Completed 500 Internal Server Error in 2412ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( js/jquery-3.2.1.min.js )` to `config/initializers/assets.rb` and restart your server):
+    26:   <body>
+    27:       <%= yield %>
+    28: 
+    29:       <%= javascript_include_tag "js/jquery-3.2.1.min.js" %>
+    30:       <%= javascript_include_tag "styles/bootstrap4/popper.js" %>
+    31:       <%= javascript_include_tag "styles/bootstrap4/bootstrap.min.js" %>
+    32:       <%= javascript_include_tag "plugins/greensock/TweenMax.min.js" %>
+  
+app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb___2593314960545023665_69997298749440'
+Started GET "/" for ::1 at 2019-05-02 21:27:41 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( js/jquery-3.2.1.min.js )` to `config/initializers/assets.rb` and restart your server):
+    26:   <body>
+    27:       <%= yield %>
+    28: 
+    29:       <%= javascript_include_tag "js/jquery-3.2.1.min.js" %>
+    30:       <%= javascript_include_tag "styles/bootstrap4/popper.js" %>
+    31:       <%= javascript_include_tag "styles/bootstrap4/bootstrap.min.js" %>
+    32:       <%= javascript_include_tag "plugins/greensock/TweenMax.min.js" %>
+  
+app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb___2593314960545023665_69997312658420'
+Started GET "/" for ::1 at 2019-05-02 21:27:52 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (398.6ms)
+Completed 500 Internal Server Error in 734ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( plugins/greensock/TimelineMax.min.js )` to `config/initializers/assets.rb` and restart your server):
+    30:       <%= javascript_include_tag "styles/bootstrap4/popper.js" %>
+    31:       <%= javascript_include_tag "styles/bootstrap4/bootstrap.min.js" %>
+    32:       <%= javascript_include_tag "plugins/greensock/TweenMax.min.js" %>
+    33:       <%= javascript_include_tag "plugins/greensock/TimelineMax.min.js" %>
+    34:       <%= javascript_include_tag "plugins/scrollmagic/ScrollMagic.min.js" %>
+    35:       <%= javascript_include_tag "plugins/greensock/animation.gsap.min.js" %>
+    36:       <%= javascript_include_tag "plugins/greensock/ScrollToPlugin.min.js" %>
+  
+app/views/layouts/application.html.erb:33:in `_app_views_layouts_application_html_erb___1536703919817401842_35927180'
+Started GET "/" for ::1 at 2019-05-02 21:28:55 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (396.2ms)
+Completed 500 Internal Server Error in 758ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( plugins/OwlCarousel2-2.2.1/owl.carousel.js )` to `config/initializers/assets.rb` and restart your server):
+    34:       <%= javascript_include_tag "plugins/scrollmagic/ScrollMagic.min.js" %>
+    35:       <%= javascript_include_tag "plugins/greensock/animation.gsap.min.js" %>
+    36:       <%= javascript_include_tag "plugins/greensock/ScrollToPlugin.min.js" %>
+    37:       <%= javascript_include_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.js" %>
+    38:       <%= javascript_include_tag "plugins/Isotope/isotope.pkgd.min.js" %>
+    39:       <%= javascript_include_tag "plugins/easing/easing.js" %>
+    40:       <%= javascript_include_tag "plugins/parallax-js-master/parallax.min.js" %>
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb__1833648679904249013_69844491875060'
+Started GET "/" for ::1 at 2019-05-02 21:29:59 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (372.0ms)
+Completed 500 Internal Server Error in 745ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( js/custom.js )` to `config/initializers/assets.rb` and restart your server):
+    38:       <%= javascript_include_tag "plugins/Isotope/isotope.pkgd.min.js" %>
+    39:       <%= javascript_include_tag "plugins/easing/easing.js" %>
+    40:       <%= javascript_include_tag "plugins/parallax-js-master/parallax.min.js" %>
+    41:       <%= javascript_include_tag "js/custom.js" %>
+    42:   </body>
+    43: </html>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb___609727779570458936_39546480'
+Started GET "/" for ::1 at 2019-05-02 21:30:27 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (319.0ms)
+Completed 200 OK in 564ms (Views: 555.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 21:31:00 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 203ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
