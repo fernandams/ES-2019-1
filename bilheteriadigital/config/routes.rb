@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'main/index'
   resources :presentations
   resources :events
   resources :age_groups
@@ -6,5 +7,8 @@ Rails.application.routes.draw do
   resources :rooms
   resources :credit_cards
   devise_for :users
+
+  root to: 'main#index'
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
