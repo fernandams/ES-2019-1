@@ -843,3 +843,335 @@ Processing by MainController#index as HTML
 Completed 200 OK in 203ms (Views: 200.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-05-02 22:11:48 -0300
+Started GET "/" for ::1 at 2019-05-02 22:11:48 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (703.7ms)
+  Rendered main/index.html.erb within layouts/application (718.5ms)
+Completed 200 OK in 1224ms (Views: 1222.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1233ms (Views: 1222.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 22:11:57 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 204ms (Views: 201.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 22:12:38 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (350.9ms)
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `navbar' for #<#<Class:0x00007f717831fe20>:0x00007f7179eab2c0>):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render navbar%>
+    6: 	<!-- Menu -->
+    7: 
+    8: 	<div class="menu menu_mm trans_300">
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062676729340'
+Started GET "/" for ::1 at 2019-05-02 22:12:46 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial main/_navbar, application/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render 'navbar'%>
+    6: 	<!-- Menu -->
+    7: 
+    8: 	<div class="menu menu_mm trans_300">
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_47598360'
+Started GET "/" for ::1 at 2019-05-02 22:12:53 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layout/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render 'layout/navbar'%>
+    6: 	<!-- Menu -->
+    7: 
+    8: 	<div class="menu menu_mm trans_300">
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062706096380'
+Started GET "/" for ::1 at 2019-05-02 22:13:01 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layout/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "layout/navbar" %>
+    6: 	<!-- Menu -->
+    7: 
+    8: 	<div class="menu menu_mm trans_300">
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062704107080'
+Started GET "/" for ::1 at 2019-05-02 22:16:40 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_42180860'
+Started GET "/" for ::1 at 2019-05-02 22:16:42 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062673141540'
+Started GET "/" for ::1 at 2019-05-02 22:16:57 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "../layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062706786020'
+Started GET "/" for ::1 at 2019-05-02 22:17:36 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "../layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062701401000'
+Started GET "/" for ::1 at 2019-05-02 22:17:38 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "../layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062895788820'
+Started GET "/" for ::1 at 2019-05-02 22:17:59 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "../layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_70062675280760'
+Started GET "/" for ::1 at 2019-05-02 22:18:06 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (33.6ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    25: 
+    26:   <body>
+    27: 
+    28:   	<%= render "layouts/navbar" %>
+    29: 
+    30:       <%= yield %>
+    31: 
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___2572536676620083984_70062701658780'
+Started GET "/" for ::1 at 2019-05-02 22:18:07 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (27.8ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    25: 
+    26:   <body>
+    27: 
+    28:   	<%= render "layouts/navbar" %>
+    29: 
+    30:       <%= yield %>
+    31: 
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___2572536676620083984_70062675233160'
+Started GET "/" for ::1 at 2019-05-02 22:18:58 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial ../layouts/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    2: 
+    3: 	<!-- Header -->
+    4: 
+    5: 	<%= render "../layouts/navbar" %>
+    6: 
+    7: 	<!-- Menu -->
+    8: 
+  
+app/views/main/index.html.erb:5:in `_app_views_main_index_html_erb___2284051401747795667_47763780'
+Started GET "/" for ::1 at 2019-05-02 22:19:08 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered main/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 205ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-02 22:20:22 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered main/index.html.erb within layouts/application (27.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layout/_footer with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ahmoura/Documentos/UnB/8º Período/ES - Engenharia de Software/ES-2019-1/bilheteriadigital/app/views"
+  * "/home/ahmoura/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views"
+):
+    357: 
+    358: 	<!-- Footer -->
+    359: 	
+    360: 	<%= render "layout/footer" %>
+    361: </div>
+  
+app/views/main/index.html.erb:360:in `_app_views_main_index_html_erb___2284051401747795667_70062697622340'
+Started GET "/" for ::1 at 2019-05-02 22:20:39 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+  Rendered main/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 204ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+
+
