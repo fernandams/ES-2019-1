@@ -36,3 +36,8 @@ Rails.application.config.assets.precompile += %w( plugins/Isotope/isotope.pkgd.m
 Rails.application.config.assets.precompile += %w( plugins/easing/easing.js )
 Rails.application.config.assets.precompile += %w( plugins/parallax-js-master/parallax.min.js )
 Rails.application.config.assets.precompile += %w( js/custom.js )
+
+Rails.application.config.assets.precompile += %w( styles/categories.css )
+Rails.application.config.assets.precompile += %w( styles/categories_responsive.css )
+
+Rails.application.config.assets.precompile += %w( images/*.* )
