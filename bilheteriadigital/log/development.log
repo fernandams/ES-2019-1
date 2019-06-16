@@ -3201,3 +3201,150 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 129ms (Views: 126.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-15 17:10:07 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+  Rendered main/index.html.erb within layouts/application (851.9ms)
+Completed 200 OK in 1212ms (Views: 1198.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.html" for ::1 at 2019-06-15 17:11:00 -0300
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:15
+  Rendered categories/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 219ms (Views: 211.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/categories.html" for ::1 at 2019-06-15 17:11:10 -0300
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:15
+  Rendered categories/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 199ms (Views: 196.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-15 17:11:18 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+  Rendered main/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 171ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.html" for ::1 at 2019-06-15 17:12:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-15 17:12:28 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+  Rendered main/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 189ms (Views: 187.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact.html" for ::1 at 2019-06-15 17:12:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/contact.html"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-15 17:12:38 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+  Rendered main/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 215ms (Views: 213.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-15 17:18:33 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ahmoura/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+  Rendered main/index.html.erb within layouts/application (315.1ms)
+Completed 200 OK in 624ms (Views: 615.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories.html" for ::1 at 2019-06-15 17:18:39 -0300
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/categories/index.html.erb:15
+  Rendered categories/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 256ms (Views: 249.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-15 17:18:55 -0300
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+  Rendered main/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 181ms (Views: 179.4ms | ActiveRecord: 0.0ms)
+
+
