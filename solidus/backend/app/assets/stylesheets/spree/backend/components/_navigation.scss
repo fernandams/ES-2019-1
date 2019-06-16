@@ -1,0 +1,231 @@
+$padding-x-navbar: 26px;
+$padding-y-navbar: 13px;
+$padding-y-navbar-submenu: 9px;
+
+nav.menu {
+  ul {
+    list-style: none;
+
+    li {
+      a {
+        padding: 10px 0;
+        display: block;
+        position: relative;
+        text-align: left;
+        border: 1px solid transparent;
+        font-weight: $font-weight-bold;
+      }
+
+      &.active a {
+        color: $color-primary;
+        border-left-width: 0;
+        border-bottom-color: $color-primary;
+      }
+    }
+  }
+}
+
+.admin-nav {
+  border-right: $border-sidebar;
+  background: $color-sidebar-bg;
+  z-index: $zindex-sticky;
+}
+
+.admin-nav-header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+  text-align: center;
+  padding: 0 1.25em;
+  // Using line height for proper vertical centering.
+  // As line height does not take the border width into account we need to subtract it.
+  line-height: $main-header-height - 1px;
+}
+
+.admin-nav-menu {
+  > ul {
+    margin: 1.5em 0 0;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    background: $color-navbar-bg;
+
+    &:hover {
+      background: $color-navbar-active-bg;
+
+      > a {
+        color: $color-navbar-active;
+      }
+    }
+
+    &.selected {
+      background: $color-navbar-active-bg;
+
+      > a {
+        color: $color-navbar;
+      }
+    }
+
+    &.selected li {
+      padding-left: 2em;
+    }
+
+    &:not(.selected):not(:hover) > ul {
+      display: none;
+    }
+
+    &:not(.selected) {
+      position: relative;
+
+      // flyout nav
+      > ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: $width-sidebar-flyout;
+        margin-left: 0;
+        background: $color-white;
+        box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 0 4px 4px 4px;
+        border: 1px solid $color-border;
+        @include caret($direction: left, $color-caret: $color-white);
+
+      &:before {
+        z-index: 1;
+        top: 1.5em;
+      }
+      
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-width: 1em 1em;
+        border-style: solid;
+        border-color: transparent;
+        border-right-color: $color-border;
+        left: -2.1em;
+        top: 1.5em;
+        margin-top: -1em;
+      }
+      
+      > li {
+        background: $color-white;
+        
+        a {
+          font-weight: $font-weight-bold;
+        }
+      }
+     }
+    }
+  }
+
+  a {
+    display: block;
+    padding: $padding-y-navbar $padding-x-navbar;
+    color: $color-navbar;
+    font-weight: $font-weight-bold;
+  }
+
+  .icon_link {
+    text-indent: 2em;
+
+    &:before {
+      color: $color-icon-navbar;
+      font-weight: $font-weight-normal;
+      position: absolute;
+      left: 1em;
+      transform: translateX(-50%);
+    }
+  }
+
+  // until .fa usage is corrected
+  .text {
+    font-family: $font-family-base;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  .admin-subnav {
+    background: $color-navbar-submenu-bg;
+    margin: 0;
+    padding-top:    $padding-y-navbar - $padding-y-navbar-submenu;
+    padding-bottom: $padding-y-navbar - $padding-y-navbar-submenu;
+
+    li {
+      background: $color-navbar-submenu-bg;
+    }
+
+    a {
+      color: $color-navbar-submenu;
+      font-weight: $font-weight-normal;
+      padding-top:    $padding-y-navbar-submenu;
+      padding-bottom: $padding-y-navbar-submenu;
+
+      &:hover {
+        color: $color-navbar-submenu-active;
+      }
+    }
+
+    .selected {
+      a {
+        color: $color-navbar-submenu-active;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
+
+.admin-nav-footer {
+  background-color: $color-navbar-footer-bg;
+
+  a {
+    color: $color-navbar-footer;
+
+    &:hover {
+      color: $color-navbar-footer-active;
+    }
+  }
+}
+
+.admin-locale-selection {
+  margin: 1em;
+}
+
+.admin-nav.fits .admin-nav-footer {
+  position: fixed;
+  bottom: 0;
+  width: $width-sidebar;
+  border-top: $border-sidebar;
+  border-right: $border-sidebar;
+}
+
+.admin-login-nav {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  li {
+    padding: 0.3rem 1.2rem;
+  }
+
+  a {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+.brand-link {
+  display: block;
+}

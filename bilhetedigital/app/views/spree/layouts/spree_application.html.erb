@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render partial: 'spree/shared/head' %>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sublime project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag "styles/bootstrap4/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "plugins/font-awesome-4.7.0/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %>
+    <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/owl.theme.default.css" %>
+    <%= stylesheet_link_tag "plugins/OwlCarousel2-2.2.1/animate.css" %>
+    <%= stylesheet_link_tag "styles/main_styles.css" %>
+    <%= stylesheet_link_tag "styles/responsive.css" %>
+  
+  
+    <%# Categories %>
+    <%= stylesheet_link_tag "styles/categories.css" %>
+    <%= stylesheet_link_tag "styles/categories_responsive.css" %>
+
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+
+    <div class="container">
+
+      <%= render partial: 'spree/shared/header' %>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div id="wrapper" class="row" data-hook>
+
+        <%= taxon_breadcrumbs(@taxon) %>
+
+        <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
+
+        <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
+
+        <%= yield :templates %>
+
+      </div>
+
+      <%= render partial: 'spree/shared/footer' %>
+
+    </div>
+
+      <%= javascript_include_tag "js/jquery-3.2.1.min.js" %>
+      <%= javascript_include_tag "styles/bootstrap4/popper.js" %>
+      <%= javascript_include_tag "styles/bootstrap4/bootstrap.min.js" %>
+      <%= javascript_include_tag "plugins/greensock/TweenMax.min.js" %>
+      <%= javascript_include_tag "plugins/greensock/TimelineMax.min.js" %>
+      <%= javascript_include_tag "plugins/scrollmagic/ScrollMagic.min.js" %>
+      <%= javascript_include_tag "plugins/greensock/animation.gsap.min.js" %>
+      <%= javascript_include_tag "plugins/greensock/ScrollToPlugin.min.js" %>
+      <%= javascript_include_tag "plugins/OwlCarousel2-2.2.1/owl.carousel.js" %>
+      <%= javascript_include_tag "plugins/Isotope/isotope.pkgd.min.js" %>
+      <%= javascript_include_tag "plugins/easing/easing.js" %>
+      <%= javascript_include_tag "plugins/parallax-js-master/parallax.min.js" %>
+      <%= javascript_include_tag "js/custom.js" %>
+
+  </body>
+</html>
