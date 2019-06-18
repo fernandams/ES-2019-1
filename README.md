@@ -1,5 +1,9 @@
 # ES-2019-1
+
 Repositório utilizado para o projeto da disciplina de Engenharia de Software. 
+
+
+## Participantes
 
 > Antônio Henrique de Moura Rodrigues
 >15/0118236
@@ -14,6 +18,10 @@ Repositório utilizado para o projeto da disciplina de Engenharia de Software.
 >thayannaklysnney@gmail.com
 ___
 
+## Projeto
+
+### Organizando ambiente
+
 Para iniciar o projeto, é necessário organizar o ambiente do ruby on rails:
 
 <pre><code>> rails db:create
@@ -23,6 +31,8 @@ Para iniciar o projeto, é necessário organizar o ambiente do ruby on rails:
 </pre></code>
 ___
 
+### Acessando a página de vendas
+
 Após isso, é necessário acessar por um navegador utilizando o caminho:
 
 <pre><code>> localhost:3000 </pre></code>
@@ -30,13 +40,23 @@ Após isso, é necessário acessar por um navegador utilizando o caminho:
 Aqui, será apresentado o index, com a página inicial e os produtos disponíveis para compra.
 ___
 
+### Acessando o setor do Administrador
+
 Para acesso ao setor do administrador, acesse:
 
 <pre><code>> localhost:3000/admin </pre></code>
 
-As credenciais são;
+As credenciais são:
 
 <pre><code>usuário: john@doe.com
 senha: 123456
 </pre></code>
 ___
+
+## Ambiente de testes
+
+Para acessar o ambiente de testes, é necessário ir ao diretório:
+
+<pre><code>> bilhetedigital/ vendor/ solidus/ frontend/ spec/spec_helper.rb </pre></code>
+
+E rodar esse aquivo para execução dos testes.
