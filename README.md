@@ -1,14 +1,42 @@
 # ES-2019-1
 Repositório utilizado para o projeto da disciplina de Engenharia de Software. 
 
-rails new bilheteriadigital --database=postgresql
-rails g devise:install
-rails generate simple_form:install --bootstrap
-bundle install
+> Antônio Henrique de Moura Rodrigues
+>15/0118236
+>ahmoura1995@gmail.com
 
-rails g devise User
-rails g scaffold CreditCard number:string sec_code:integer due_date:string user:references
-rails g scaffold Room number:integer about:string
-rails g scaffold Category typify:string about:string
-rails g scaffold AgeGroup about:string
-rails g scaffold Event name:string city:string address:string user:references age_group:references room:references category:references
+>Fernanda Macedo de Sousa
+>17/0010058
+>fernandamacedo.etb@gmail.com
+
+>Thayanna Klysnney Moreira Nunes
+>16/0146232
+>thayannaklysnney@gmail.com
+___
+
+Para iniciar o projeto, é necessário organizar o ambiente do ruby on rails:
+
+<pre><code>> rails db:create
+> bundle
+> rails db:migrate
+> rails s
+</pre></code>
+___
+
+Após isso, é necessário acessar por um navegador utilizando o caminho:
+
+<pre><code>> localhost:3000 </pre></code>
+
+Aqui, será apresentado o index, com a página inicial e os produtos disponíveis para compra.
+___
+
+Para acesso ao setor do administrador, acesse:
+
+<pre><code>> localhost:3000/admin </pre></code>
+
+As credenciais são;
+
+<pre><code>usuário: john@doe.com
+senha: 123456
+</pre></code>
+___
